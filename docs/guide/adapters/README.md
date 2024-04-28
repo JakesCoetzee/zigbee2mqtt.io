@@ -448,12 +448,12 @@ Local fast delivery: [AU](https://shop.dialedin.com.au/products/smlight-slzb-06p
     <br />
     
     USB connected adapters (ConBee / ConBee II / ConBee III) and Raspberry Pi GPIO modules (RaspBee and RaspBee II).
-    If Zigbee2MQTT fails to start, try adding the following to your `configuration.yaml`
+    If Zigbee2MQTT fails to start, try adding the following to your `configuration.yaml` in the directory /homeassistant/zigbee2mqtt
     ```yaml
     serial:
       adapter: deconz
     ```
-    Add the correct baudrate to the `configuration.yaml` into the serial section.
+    Add the correct baudrate to the `configuration.yaml` into the serial section using the paramater `baudrate: `.
     * For ConBee2: specifying the baudrate is not necessary
     * For RaspBee2 it is 38400
     * For ConBee3 it is 115200
